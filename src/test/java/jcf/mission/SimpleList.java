@@ -33,7 +33,7 @@ public interface SimpleList<T> {
         return list;
     }
 
-    static <E> void copy(SimpleList<? extends E> copy, SimpleList<? super E> origin) {
+    static <T> void copy(SimpleList<? extends T> copy, SimpleList<? super T> origin) {
         origin.clear();
         for (int i = 0; i < copy.size(); i++) {
             origin.add(copy.get(i));

@@ -165,7 +165,7 @@ public class SimpleArrayList<T> implements SimpleList<T> {
 
     @Override
     public void clear() {
-        list = new String[10];
+        list = new Object[10];
         currentInsertIndex = 0;
     }
 
